@@ -23,6 +23,6 @@ class Song
   end
 
   def self.artists
-    @@artists.collect { |artist| return artist if !@@artists.include?(artist)  }
+    return @@artists
   end
 end

@@ -19,7 +19,7 @@ class Song
   end
 
   def self.genres
-    @@genres.collect { |genre| return genre if !@@genre.include?(genre) }
+    @@genres.uniq
   end
 
   def self.artists

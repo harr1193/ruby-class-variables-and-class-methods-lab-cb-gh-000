@@ -4,7 +4,7 @@ class Song
   @@count = 0
   @@genres = []
   @@artists = []
-  
+
 
   def initialize(name, artist, genre)
     @name = name
@@ -33,5 +33,6 @@ class Song
     @@genres.each{ |genre| do
         genre_hash[genre] = (genre_hash{genre} + 1)
     end
+    genre_hash
   end
 end

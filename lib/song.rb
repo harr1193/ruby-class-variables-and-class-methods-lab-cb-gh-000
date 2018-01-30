@@ -28,5 +28,6 @@ class Song
   end
 
   def genre_count
+    nil
   end
 end

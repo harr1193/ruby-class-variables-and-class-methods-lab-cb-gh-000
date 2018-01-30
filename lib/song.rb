@@ -23,6 +23,6 @@ class Song
   end
 
   def self.artists
-    @@artists.collect { |artist| artist if @@artists.inlude?(artist) }
+    @@artists..group_by { |e| e }.select { |k, v| v.size.eql? 1 }.keys
   end
 end
